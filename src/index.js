@@ -8,7 +8,10 @@ class Container extends React.Component {
 
     SlideShow()
     {
-        document.getElementById("SlideImage2").style.display = "block";
+        console.log("Click");
+        const Slide = document.getElementById("SlideImage2");
+        //issue
+        //Slide.style.display = "block";
     }
 
     render()
@@ -17,7 +20,7 @@ class Container extends React.Component {
     return(
         <div>
             <div class="NavBar">
-                <ul>
+                <ul id='Nav1'>
                     <li><a href="Home"><img src="Pics/Logo.jpg" alt="Amazon"/></a></li>
                     <li><a href="Location">Deliver to?</a></li>
                     <li><a><input name='SearchBar' type="text" placeholder="Search.."/></a></li>
@@ -35,18 +38,18 @@ class Container extends React.Component {
                 </ul>
             </div>
             <div class="NavBar">
-                <ul>
+                <ul id='Nav2'>
                     <li><a href="All"><img src="Pics/All.jpg" alt="="/>All</a></li>
                     <li><a href="Video">Prime Video</a></li>
                     <li><a href="Deals">Today's Deals</a></li>
                     <li class="dropdown">
-                        <a href="Geocery">Grocery <img src="Pics/Arrow.jpg" alt="\/"/></a>
+                        <a href="Geocery">Grocery <img src="Pics/ArrowBlue.jpg" alt="\/"/></a>
                         <div class="dropdown-content">
                             <a href="Geocery">Link 1</a>
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="Prime">Prime <img src="Pics/Arrow.jpg" alt="\/"/></a>
+                        <a href="Prime">Prime <img src="Pics/ArrowBlue.jpg" alt="\/"/></a>
                         <div class="dropdown-content">
                             <a href="Prime">Link 1</a>
                         </div>
@@ -55,7 +58,7 @@ class Container extends React.Component {
                     <li><a href="Delivery">Free Delivery</a></li>
                     <li><a href="Account">Amazon</a></li>
                     <li class="dropdown">
-                        <a href="History">Browsing History <img src="Pics/Arrow.jpg" alt="\/"/></a>
+                        <a href="History">Browsing History <img src="Pics/ArrowBlue.jpg" alt="\/"/></a>
                         <div class="dropdown-content">
                             <a href="History">Link 1</a>
                         </div>

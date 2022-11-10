@@ -23,7 +23,14 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+#Nav1 {
     background-color: #071016;
+}
+
+#Nav2 {
+    background-color: #1d2f3b;
 }
   
 li {
@@ -97,7 +104,7 @@ li.dropdown {
     offset-position: 0;
     float: left;
     width: 49%;
-    height: 420px;
+    height: 100%;
     border: 5px solid gray;
     background-color: white;
 }
