@@ -4,12 +4,15 @@ import './index.css';
 
 let slideIndex = 1;
 
-function SlideShow()
-{
-    document.getElementById("SlideImage2").style.display = "block";
-}
+class Container extends React.Component {
 
-function Container() {
+    SlideShow()
+    {
+        document.getElementById("SlideImage2").style.display = "block";
+    }
+
+    render()
+    {
 
     return(
         <div>
@@ -64,7 +67,7 @@ function Container() {
             </div>
             
             <div id='SlideShow'>
-                <div class="slideshow-container" onLoad={SlideShow}>
+                <div class="slideshow-container">
                 
                     <div class="mySlides fade">
                         <img className='SlideImage1' src="Pics/Slide1.jpg" alt='Slide1' width="100%" />
@@ -93,10 +96,24 @@ function Container() {
                 <div className='Items'>
                     <img src="Pics/Items4.jpg" alt='Items' />
                 </div>
+            </div>
 
+            <div class="shoppingWindow">
+                <div className='vids'>
+                    <a href="https://www.amazon.co.uk/gp/video/detail/amzn1.dv.gti.4ca9f684-6eaf-181e-188e-91dad3b8e11c/?ie=UTF8&ref_=dvm_crs_gat_uk_xs_s_dk_hud_eg_al&pf_rd_r=DZ52A651YVSY5V39Z4H5&pf_rd_p=5e3d898a-5e70-461f-9fbe-52e13d252388&pd_rd_r=6b5d1308-a72e-4437-89da-1fb7acf8ddbc&pd_rd_w=WRqIu&pd_rd_wg=r3JZt">
+                        <img src="Pics/Vid.jpg" alt='Items' />
+                    </a>
+                </div>
+                <div className='Items'>
+                    <img src="Pics/Items5.jpg" alt='Items' />
+                </div>
+                <div className='Items'>
+                    <img src="Pics/Items6.jpg" alt='Items' />
+                </div>
             </div>
         </div>
     );
+    }
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
