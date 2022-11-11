@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import styles from './index.css';
 
 let slideIndex = 1;
 
@@ -9,9 +9,11 @@ class Container extends React.Component {
     SlideShow()
     {
         console.log("Click");
-        const Slide = document.getElementById("SlideImage2");
+        let Slide = document.getElementById("SlideImage1");
+        let Slide2 = document.getElementById("SlideImage2");
         //issue
-        //Slide.style.display = "block";
+        Slide.styles.display = "none";
+        Slide2.styles.display = "block";
     }
 
     render()
